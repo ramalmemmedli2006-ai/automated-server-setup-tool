@@ -1,0 +1,74 @@
+automated-server-setup-tool/
+├── README.md
+├── requirements.txt
+├── main.py
+├── config.json
+├── setup/
+│   ├── __init__.py
+│   ├── packages.py
+│   ├── firewall.py
+│   ├── users.py
+│   ├── services.py
+│   └── security.py
+└── logs/
+
+
+  Installation
+  git clone https://github.com/yourusername/automated-server-setup-tool.git
+cd automated-server-setup-tool
+  Usage
+sudo python3 main.py
+  Example Configuration
+{
+  "packages": ["nginx", "ufw", "curl", "git"],
+  "new_user": "serveradmin",
+  "ssh_port": 22,
+  "allowed_ports": [22, 80, 443],
+  "services": ["nginx"]
+}
+What This Tool Does
+
+Updates package lists
+
+Installs selected packages
+
+Creates a new user
+
+Grants sudo access to the new user
+
+Configures the firewall
+
+Enables selected services
+
+Applies basic SSH hardening
+
+Saves logs for review
+
+Important Note
+
+This tool is for educational and authorized administration purposes only.
+Always test it in a virtual machine before using it on a production server.
+
+Future Improvements
+
+Add Docker installation
+
+Add Apache and MySQL setup
+
+Add automatic backups
+
+Add rollback support
+
+Add OS detection
+
+Add interactive menu mode
+
+License
+
+MIT License
+
+
+# requirements.txt
+
+```text
+# No external dependencies required
